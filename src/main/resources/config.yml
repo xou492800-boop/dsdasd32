@@ -1,0 +1,25 @@
+# Seconds between whirlpool summons per player.
+cooldown-seconds: 1.5      # whirlpool (shift + right click)
+wave-cooldown-seconds: 1.5 # wave (shift + left click)
+
+whirlpool:
+  height: 7.0            # funnel height in blocks
+  top-radius: 4.5        # radius of the rim at the top
+  pull-radius: 10.0      # how far away players get sucked in
+  pull-seconds: 5.5      # drag-in + drowning phase
+  spin-seconds: 3.5      # spin-up phase (faster and faster) before the launch
+  lift-seconds: 1.5      # before the launch, players are dragged up to the top rim over this long
+  launch-distance: 10.0  # approx. blocks away from the whirlpool center
+  drown-damage: 2.0      # damage per second once air runs out (2.0 = 1 heart)
+  exclude-caster: true   # the summoner is not pulled in
+
+wave:
+  width: 9.0             # side-to-side size of the wave (stays constant)
+  depth: 3.0             # front-to-back thickness (stays constant)
+  start-height: 5.0      # height when it spawns...
+  end-height: 1.2        # ...shrinking steadily to this by the end
+  seconds: 4.5           # how long the wave lasts / holds players (4-5s)
+  speed: 0.35            # blocks per tick in whatever direction you steer it
+  turn-rate: 0.2         # how quickly it follows your aim (0.05 = lazy, 1.0 = instant)
+  drown-damage: 2.0      # damage per second once air runs out
+  exclude-caster: true

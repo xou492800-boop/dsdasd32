@@ -1,0 +1,9 @@
+name: Whirl
+version: 1.0.0
+main: dev.whirl.WhirlPlugin
+api-version: '1.21'
+description: Blank enchanted nautilus shell that summons a drowning whirlpool.
+commands:
+  whirl:
+    description: Gives you the whirlpool shell.
+    usage: /whirl
